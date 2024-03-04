@@ -1,7 +1,7 @@
 
 async function getData() {
-    //const response = await fetch('/rp_Sherlock/data/caterpillar-mean-mass.csv'); // Data directory for GitHub pages
-    const response = await fetch('../data/caterpillar-mean-mass.csv'); // .. moves up 1 folder. Data directory for local dev (LiveServer)
+    //const response = await fetch('/Sherlock_rpFlaskFirebase/data/caterpillar-mean-mass.csv'); // Data directory for GitHub pages
+    const response = await fetch('static/data/caterpillar-mean-mass.csv'); // .. moves up 1 folder. Data directory for local dev (LiveServer)
     const data = await response.text();    // CSV is in TEXT format
     //console.log(data);
 

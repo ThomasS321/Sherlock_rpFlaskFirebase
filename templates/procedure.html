@@ -8,7 +8,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" 
         integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">    
-    <link rel="stylesheet" href="stylesSE.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
         crossorigin="anonymous" defer></script>
@@ -18,8 +18,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark nb-background-color">
     <!-- lg = large breakpoint, navbar-light = make text dark, headerBG = custom css BG color -->
       <div class = "container">
-        <a href="index.html" class ="navbar-brand">
-            <img src = "img/caterpillar-icon.png" alt="Caterpillar Logo" class="d-inline-block align-text-top w-25">
+        <a href="{{url_for('index')}}" class ="navbar-brand">
+            <img src = "{{url_for('static', filename='/img/caterpillar-icon.png')}}" alt="Caterpillar Logo" class="d-inline-block align-text-top w-25">
         </a>
 
         <!-- Hamburger Menu Button -->
@@ -32,13 +32,13 @@
         <!-- Links to hamburger menu botton -->
         <ul class="navbar-nav ms-auto">     <!-- ms-auto is margin spacing -->
           <li class="nav-item">
-            <a href="authors.html" class="nav-link hover-underline-animation nbMenuItem">Authors</a>
+            <a href="{{url_for('authors')}}" class="nav-link hover-underline-animation nbMenuItem">Authors</a>
           </li>
           <li class="nav-item">
-            <a href="procedure.html" class="nav-link hover-underline-animation nbMenuItem">Procedure</a>
+            <a href="{{url_for('procedure')}}" class="nav-link hover-underline-animation nbMenuItem">Procedure</a>
           </li>
           <li class="nav-item">
-            <a href="results.html" class="nav-link hover-underline-animation nbMenuItem">Results</a>
+            <a href="{{url_for('results')}}" class="nav-link hover-underline-animation nbMenuItem">Results</a>
           </li>
         </ul>
       </div>
@@ -80,7 +80,7 @@
                 <li><h5>3 multicolored light bulbs</h5></li>
               </ul> 
             </td>
-            <td class="text-center"><img src="img/caterpillars-and-food.jpg" alt="Caterpillars and their food"></td>
+            <td class="text-center"><img src="{{url_for('static', filename='/img/caterpillars-and-food.jpg')}}" alt="Caterpillars and their food"></td>
           </tr>
           <tr class="align-middle">
             <th scope="row" class="table-secondary">
@@ -94,7 +94,7 @@
                     <li><h5>Cover the container with a coffee filter secured by a rubber band</h5></li>
                 </ul> 
             </td>
-            <td class="text-center"><img src="img/container-set-up.png" alt="Set up of the Containers"></td>
+            <td class="text-center"><img src="{{url_for('static', filename='/img/container-set-up.png')}}" alt="Set up of the Containers"></td>
           </tr>
           <tr class="align-middle">
             <th scope="row" class="table-secondary">
@@ -108,7 +108,7 @@
                     <li><h5>Be sure to not have the light from section leaking into another</h5></li>
                 </ul> 
             </td>
-            <td class="text-center"><img src="img/experiment-set-up-small.jpg" alt="Set up of the experiment"></td>
+            <td class="text-center"><img src="{{url_for('static', filename='/img/experiment-set-up-small.jpg')}}" alt="Set up of the experiment"></td>
           </tr>
           <tr class="align-middle">
             <th scope="row" class="table-secondary">
@@ -123,7 +123,7 @@
                         and subtract the mass of the empty container from this mass once the experiment is over</h5></li>
               </ul> 
             </td>
-            <td class="text-center"><img src="img/measuring-caterpillars.png" alt="Measuring caterpillar's mass"></td>
+            <td class="text-center"><img src="{{url_for('static', filename='/img/measuring-caterpillars.png')}}" alt="Measuring caterpillar's mass"></td>
           </tr>
           <tr class="align-middle">
             <th scope="row" class="table-secondary">
@@ -138,7 +138,7 @@
                         Place the cup on the scale and subtract the mass of the empty cup</h5></li>
                 </ul> 
             </td>
-            <td class="text-center"><img src="img/butterfly-section.png" alt="Butterfly habitats and measuring butteryfly's mass"></td>
+            <td class="text-center"><img src="{{url_for('static', filename='/img/butterfly-section.png')}}" alt="Butterfly habitats and measuring butteryfly's mass"></td>
           </tr>
         </tbody>
       </table>
