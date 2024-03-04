@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" 
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">   
+    <link rel="stylesheet" href="stylesSE.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+        crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark nb-background-color">
+    <!-- lg = large breakpoint, navbar-light = make text dark, headerBG = custom css BG color -->
+      <div class = "container">
+        <a href="#" class ="navbar-brand">
+            <img src = "img/caterpillar-icon.png" alt="Caterpillar Logo" class="d-inline-block align-text-top w-25">
+        </a>
+
+        <!-- Hamburger Menu Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible navbar menu with custom hover underline CSS animation -->
+      <div class="collapse navbar-collapse" id="navmenu">
+        <!-- Links to hamburger menu botton -->
+        <ul class="navbar-nav ms-auto">     <!-- ms-auto is margin spacing -->
+          <li class="nav-item">
+            <a href="authors.html" class="nav-link hover-underline-animation nbMenuItem">Authors</a>
+          </li>
+          <li class="nav-item">
+            <a href="procedure.html" class="nav-link hover-underline-animation nbMenuItem">Procedure</a>
+          </li>
+          <li class="nav-item">
+            <a href="results.html" class="nav-link hover-underline-animation nbMenuItem">Results</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section class="showcase text-light p-2 text-center">   <!-- showcase is custom CSS -->
+      <!-- headerBG = custom css BG color, p-2 = padding 2 -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 p-0 d-flex align-items-center">
+            <!-- img-fluid = won't expand image larger than the container and will scale down if necessary -->
+              <img class="img-fluid" src="img/experiment-set-up.jpg" alt="Set Up of Caterpillar Experiment"> <!-- w-50 = 50% -->
+          </div>
+          <div class="col-sm-6 p-0 d-flex align-items-center">
+            <div class="container">
+              <h1 class="display-7">Evaluating Growth and Lifespan of the Caterpillar, Vanessa cardui, Under Varying Light Temperatures</h1>
+              <br>
+              <h4>By Thomas Sherlock</h4>
+            </div>              
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="overview text-dark p-2 lext-left">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 p-3">
+            <!-- pt-3 =  padding top -->
+            <img class="img-fluid" src="img/butterfly.png" alt="Butterfly">
+          </div>
+          <div class="col-sm-8 p-3">
+            <!-- pt-3 =  padding top -->
+            <h1 class="ovPadLeft">Background</h1>   <!-- ovPadLeft = cstom padding on left side -->
+            <p class="lead overview-font ovPadLeft"> 	Ecological light pollution is created by the widespread use of electrical lamps and other light emitting technology, 
+              which many insects are attracted to with the technology becoming more readily available all over the world. 
+              These insects, including caterpillars and butterflies, are attracted to the LED technology in the lights, 
+              which distract these insects from natural processes they need to complete in order to survive, like collecting food. 
+              These insects, specifically the Vanessa cardui butterfly, have ultraviolet, blue, 
+              and green light sensitive rhodopsins inside of its eyes that attract them to the LEDs. 
+              In addition, some shorter wavelengths of light, like violet, blue, or ultraviolet, 
+              can be lethal to some stages of the caterpillar's life cycle.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 p-3">
+            <!-- pt-3 =  padding top -->
+            <h1 class="ovPadLeft">Rationale</h1>   <!-- ovPadLeft = cstom padding on left side -->
+            <p class="lead overview-font ovPadRight"> Since ecological light pollution and short wavelength light are causing 
+              the death of many caterpillars and butterflies, many butterfly populations have decreased drastically in recent years. 
+              The study aims to find which temperature of white light, including a warm temperature of white light, 
+              a cool temperature of white light, and a white light that closely resembles daylight, 
+              least affects the caterpillar's survival rate. This temperature of light can then be used for outdoor lighting
+              that would be shining onto caterpillars in nature. The mass of the caterpillars and their lifespan are recorded 
+              to determine which temperature of white light least affects the caterpillars. 
+            </p>
+          </div>
+          <div class="col-sm-4 p-3">
+            <!-- pt-3 =  padding top -->
+            <img class="img-fluid" src="img/monarch-population-graph.jpg" alt="Graph of Monarch Populations">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 p-3">
+            <!-- pt-3 =  padding top -->
+            <img class="img-fluid" src="img/caterpillar-on-stem.jpg" alt="A painted lady caterpillar on a stem">
+          </div>
+          <div class="col-sm-8 p-3">
+            <!-- pt-3 =  padding top -->
+            <h1 class="ovPadLeft">Research Practicum</h1>   <!-- ovPadLeft = cstom padding on left side -->
+            <p class="lead overview-font ovPadLeft"> Research Practicum is a class at High Technology High School, HTHS, 
+              which aims to help the students develop their laboratory and research skills. 
+              The class has the students each develop a research project in freshman year, 
+              and have them perform the project in sophomore year. The class is structured to have a preparation period for the 
+              experiment at the beginning of the school year, and go straight into the experiment process after about a month. 
+              The students then get to perform the experiment at their 
+              own pace until January, with weekly check-ins. After the experiment is completed, 
+              the students then write a professional research paper on their experiment, create a 
+              slides presentation that summarizes the experiment, and then they present their findings. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer (requires Bootstrap icons CSS) -->
+    <footer class = "p-5 footer text-light text-center position-relative">
+      <div class="container">
+        <p class ="lead">Copyright &copy; SE + Research Practicum 2022-2023 Research Project</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h2 icon-white"></i>
+        </a>
+      </div>
+    </footer>
+</body>
+</html>
